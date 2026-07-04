@@ -3,77 +3,570 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Μαργέλης Σπύρος | Nueva Casa Real Estate</title>
+
   <meta name="description" content="Προσωπικό ψηφιακό προφίλ μεσίτη - Μαργέλης Σπύρος, Nueva Casa Real Estate.">
   <meta name="theme-color" content="#071317">
+
   <meta property="og:title" content="Μαργέλης Σπύρος | Nueva Casa Real Estate">
   <meta property="og:description" content="Επικοινωνήστε άμεσα για αγορά, πώληση ή ενοικίαση ακινήτου.">
   <meta property="og:image" content="spyros%20fun.jpg">
   <meta property="og:type" content="website">
 
   <style>
-    :root{--dark:#071317;--cyan:#61d6e8;--cyan2:#34bcd1;--text:#eaffff;--muted:rgba(234,255,255,.72);--line:rgba(97,214,232,.25)}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at top left,rgba(97,214,232,.28),transparent 34%),radial-gradient(circle at bottom right,rgba(52,188,209,.18),transparent 34%),linear-gradient(145deg,#04080a,#071317 45%,#0d2027)}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:34px 34px}
-    a{color:inherit;text-decoration:none}
-    .page{position:relative;width:100%;max-width:760px;margin:0 auto;padding:16px 14px 34px}
-    .hero,.section{border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.35);background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),rgba(5,12,15,.84)}
-    .hero{border-radius:32px;padding:22px 17px;text-align:center}
-    .section{margin-top:16px;border-radius:24px;padding:17px 15px}
-    .company-logo{width:116px;height:66px;margin:0 auto 14px;border-radius:18px;padding:6px;background:rgba(255,255,255,.06);border:1px solid rgba(97,214,232,.22);display:flex;align-items:center;justify-content:center}
-    .company-logo img{max-width:100%;max-height:100%;object-fit:contain}
-    .photo-wrap{width:168px;height:168px;margin:0 auto 15px;border-radius:50%;padding:6px;background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));box-shadow:0 0 36px rgba(97,214,232,.28),0 18px 38px rgba(0,0,0,.34)}
-    .photo{width:100%;height:100%;border-radius:50%;overflow:hidden;background:#071317}
-    .photo img{width:100%;height:100%;object-fit:cover;object-position:center}
-    .role{display:inline-block;margin-bottom:10px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--cyan);background:rgba(97,214,232,.08);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.55px}
-    h1{margin:0;color:var(--cyan);font-size:38px;line-height:1.03;letter-spacing:-1px;text-shadow:0 0 24px rgba(97,214,232,.28)}
-    .subtitle,.section p{color:var(--muted);line-height:1.5}
-    .subtitle{margin:10px auto 0;max-width:540px;font-size:15px}
-    .section h2{margin:0 0 8px;color:#fff;font-size:22px}
-    .section p{margin:0 0 14px;font-size:14px}
-    .grid,.choices,.hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
-    .hero-actions{margin-top:20px}
-    .btn{min-height:58px;border-radius:18px;padding:14px 15px;border:1px solid transparent;font-size:15px;font-weight:900;text-align:center;display:flex;align-items:center;justify-content:center;cursor:pointer}
-    .btn:active{transform:scale(.98)}
-    .btn-primary{color:#061317;background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));box-shadow:0 12px 28px rgba(52,188,209,.28)}
-    .btn-dark{color:var(--text);background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.035));border-color:var(--line)}
-    .btn-choice{justify-content:space-between;text-align:left;background:rgba(255,255,255,.06);border-color:var(--line);color:var(--text)}
-    .btn-choice:after{content:"›";color:var(--cyan);font-size:28px}
-    .btn-choice.active{background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));color:#061317;border-color:transparent}
-    .btn-choice.active:after{color:#061317}
-    .form-box{margin-top:13px;border-radius:20px;padding:14px;background:rgba(0,0,0,.22);border:1px solid rgba(97,214,232,.18)}
-    .field{margin-bottom:10px}
-    .field label{display:block;margin-bottom:6px;color:rgba(234,255,255,.88);font-size:13px;font-weight:800}
-    .field input,.field textarea{width:100%;border:1px solid rgba(97,214,232,.24);border-radius:14px;padding:12px 13px;font-family:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.08);outline:none}
-    .field textarea{min-height:92px;resize:vertical}
-    .field input::placeholder,.field textarea::placeholder{color:rgba(234,255,255,.42)}
-    .preview-box{margin-top:14px;border-radius:18px;padding:14px;background:rgba(97,214,232,.09);border:1px solid rgba(97,214,232,.22)}
-    .preview-box strong{display:block;color:var(--cyan);font-size:13px;margin-bottom:8px}
-    .preview-text{white-space:pre-wrap;color:rgba(234,255,255,.9);font-size:13.5px;line-height:1.45}
-    .small-note{margin:9px 0 0;color:rgba(234,255,255,.58);font-size:12px;text-align:center;line-height:1.45}
-    .faces{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-    .face-card{min-height:112px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
-    .face-icon{width:48px;height:48px;border-radius:50%;border:2px solid var(--cyan);position:relative;box-shadow:0 0 22px rgba(97,214,232,.18)}
-    .face-icon:before,.face-icon:after{content:"";position:absolute;top:15px;width:6px;height:6px;border-radius:50%;background:var(--cyan)}
-    .face-icon:before{left:13px}.face-icon:after{right:13px}
-    .mouth{position:absolute;left:50%;bottom:12px;width:22px;height:11px;transform:translateX(-50%);border:3px solid var(--cyan);border-left:0;border-right:0;border-top:0;border-radius:0 0 20px 20px}
-    .face-neutral .mouth{width:22px;height:0;bottom:15px;border:0;border-top:3px solid var(--cyan);border-radius:0}
-    .face-sad .mouth{bottom:8px;transform:translateX(-50%) rotate(180deg)}
-    .face-label{margin-top:9px;font-size:12px;font-weight:900;color:rgba(234,255,255,.86)}
-    .info-box{margin-top:12px;border-radius:16px;padding:12px 13px;background:rgba(255,255,255,.06);border:1px solid rgba(97,214,232,.16);color:rgba(234,255,255,.88);font-size:14px;line-height:1.45}
-    .info-box strong{display:block;color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
-    .footer{margin-top:18px;padding-top:8px;text-align:center;color:rgba(234,255,255,.58);font-size:12px;line-height:1.6}
-    .footer a{color:var(--cyan);font-weight:800}
-    @media(min-width:640px){.hero-actions,.grid,.choices{grid-template-columns:1fr 1fr}h1{font-size:50px}}
+    :root{
+      --dark:#071317;
+      --dark2:#0d2027;
+      --cyan:#61d6e8;
+      --cyan2:#34bcd1;
+      --text:#eaffff;
+      --muted:rgba(234,255,255,.72);
+      --line:rgba(97,214,232,.25);
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(97,214,232,.28),transparent 34%),
+        radial-gradient(circle at bottom right,rgba(52,188,209,.18),transparent 34%),
+        linear-gradient(145deg,#04080a,#071317 45%,#0d2027);
+    }
+
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.25;
+      background-image:
+        linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px),
+        linear-gradient(180deg,rgba(255,255,255,.04) 1px,transparent 1px);
+      background-size:34px 34px;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    button,
+    input,
+    textarea{
+      font-family:inherit;
+    }
+
+    .page{
+      position:relative;
+      width:100%;
+      max-width:760px;
+      margin:0 auto;
+      padding:16px 14px 34px;
+    }
+
+    .hero,
+    .section{
+      border:1px solid var(--line);
+      box-shadow:0 20px 50px rgba(0,0,0,.35);
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),
+        rgba(5,12,15,.84);
+    }
+
+    .hero{
+      border-radius:32px;
+      padding:22px 17px;
+      text-align:center;
+    }
+
+    .section{
+      margin-top:16px;
+      border-radius:24px;
+      padding:17px 15px;
+    }
+
+    .company-logo{
+      width:116px;
+      height:66px;
+      margin:0 auto 14px;
+      border-radius:18px;
+      padding:6px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(97,214,232,.22);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .company-logo img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+    }
+
+    .photo-wrap{
+      width:168px;
+      height:168px;
+      margin:0 auto 15px;
+      border-radius:50%;
+      padding:6px;
+      background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));
+      box-shadow:
+        0 0 36px rgba(97,214,232,.28),
+        0 18px 38px rgba(0,0,0,.34);
+    }
+
+    .photo{
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      overflow:hidden;
+      background:#071317;
+    }
+
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+
+    .role{
+      display:inline-block;
+      margin-bottom:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--cyan);
+      background:rgba(97,214,232,.08);
+      font-size:11px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.55px;
+    }
+
+    h1{
+      margin:0;
+      color:var(--cyan);
+      font-size:38px;
+      line-height:1.03;
+      letter-spacing:-1px;
+      text-shadow:0 0 24px rgba(97,214,232,.28);
+    }
+
+    .subtitle,
+    .section p{
+      color:var(--muted);
+      line-height:1.5;
+    }
+
+    .subtitle{
+      margin:10px auto 0;
+      max-width:540px;
+      font-size:15px;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      color:#fff;
+      font-size:22px;
+      line-height:1.2;
+    }
+
+    .section p{
+      margin:0 0 14px;
+      font-size:14px;
+    }
+
+    .grid,
+    .choices,
+    .hero-actions{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+
+    .hero-actions{
+      margin-top:20px;
+    }
+
+    .btn{
+      width:100%;
+      min-height:58px;
+      border-radius:18px;
+      padding:14px 15px;
+      border:1px solid transparent;
+      font-size:15px;
+      font-weight:900;
+      line-height:1.25;
+      text-align:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      transition:transform .15s ease,box-shadow .15s ease;
+    }
+
+    .btn:active{
+      transform:scale(.98);
+    }
+
+    .btn-primary{
+      color:#061317;
+      background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));
+      box-shadow:0 12px 28px rgba(52,188,209,.28);
+    }
+
+    .btn-dark{
+      color:var(--text);
+      background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.035));
+      border-color:var(--line);
+    }
+
+    .btn-choice{
+      justify-content:space-between;
+      text-align:left;
+      background:rgba(255,255,255,.06);
+      border-color:var(--line);
+      color:var(--text);
+    }
+
+    .btn-choice:after{
+      content:"›";
+      color:var(--cyan);
+      font-size:28px;
+      line-height:1;
+    }
+
+    .btn-choice.active{
+      background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));
+      color:#061317;
+      border-color:transparent;
+    }
+
+    .btn-choice.active:after{
+      color:#061317;
+    }
+
+    .form-box{
+      margin-top:13px;
+      border-radius:20px;
+      padding:14px;
+      background:rgba(0,0,0,.22);
+      border:1px solid rgba(97,214,232,.18);
+    }
+
+    .field{
+      margin-bottom:10px;
+    }
+
+    .field label{
+      display:block;
+      margin-bottom:6px;
+      color:rgba(234,255,255,.88);
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .field input,
+    .field textarea{
+      width:100%;
+      border:1px solid rgba(97,214,232,.24);
+      border-radius:14px;
+      padding:12px 13px;
+      font-size:15px;
+      color:#fff;
+      background:rgba(255,255,255,.08);
+      outline:none;
+    }
+
+    .field input:focus,
+    .field textarea:focus{
+      border-color:var(--cyan);
+      box-shadow:0 0 0 3px rgba(97,214,232,.08);
+    }
+
+    .field textarea{
+      min-height:92px;
+      resize:vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder{
+      color:rgba(234,255,255,.42);
+    }
+
+    .preview-box{
+      margin:14px 0;
+      border-radius:18px;
+      padding:14px;
+      background:rgba(97,214,232,.09);
+      border:1px solid rgba(97,214,232,.22);
+    }
+
+    .preview-title{
+      display:block;
+      color:var(--cyan);
+      font-size:13px;
+      font-weight:900;
+      margin-bottom:9px;
+    }
+
+    .preview-text{
+      white-space:pre-wrap;
+      color:rgba(234,255,255,.9);
+      font-size:13.5px;
+      line-height:1.5;
+      text-align:left;
+      word-break:break-word;
+    }
+
+    .copy-btn{
+      width:100%;
+      margin-top:12px;
+      min-height:46px;
+      border-radius:14px;
+      border:1px solid var(--cyan);
+      color:var(--cyan);
+      background:rgba(97,214,232,.06);
+      font-size:14px;
+      font-weight:900;
+      cursor:pointer;
+    }
+
+    .copy-btn.copied{
+      color:#061317;
+      background:var(--cyan);
+    }
+
+    .small-note{
+      margin:10px 0 0;
+      color:rgba(234,255,255,.58);
+      font-size:12px;
+      text-align:center;
+      line-height:1.45;
+    }
+
+    .faces{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .face-card{
+      min-height:112px;
+      border-radius:22px;
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+    }
+
+    .face-icon{
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      border:2px solid var(--cyan);
+      position:relative;
+      box-shadow:0 0 22px rgba(97,214,232,.18);
+    }
+
+    .face-icon:before,
+    .face-icon:after{
+      content:"";
+      position:absolute;
+      top:15px;
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:var(--cyan);
+    }
+
+    .face-icon:before{
+      left:13px;
+    }
+
+    .face-icon:after{
+      right:13px;
+    }
+
+    .mouth{
+      position:absolute;
+      left:50%;
+      bottom:12px;
+      width:22px;
+      height:11px;
+      transform:translateX(-50%);
+      border:3px solid var(--cyan);
+      border-left:0;
+      border-right:0;
+      border-top:0;
+      border-radius:0 0 20px 20px;
+    }
+
+    .face-neutral .mouth{
+      width:22px;
+      height:0;
+      bottom:15px;
+      border:0;
+      border-top:3px solid var(--cyan);
+      border-radius:0;
+    }
+
+    .face-sad .mouth{
+      bottom:8px;
+      transform:translateX(-50%) rotate(180deg);
+    }
+
+    .face-label{
+      margin-top:9px;
+      font-size:12px;
+      font-weight:900;
+      color:rgba(234,255,255,.86);
+    }
+
+    .info-box{
+      margin-top:12px;
+      border-radius:16px;
+      padding:12px 13px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(97,214,232,.16);
+      color:rgba(234,255,255,.88);
+      font-size:14px;
+      line-height:1.45;
+    }
+
+    .info-box strong{
+      display:block;
+      color:var(--cyan);
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.4px;
+      margin-bottom:4px;
+    }
+
+    .digital-card-box{
+      margin-top:18px;
+      padding:18px 15px;
+      border-radius:22px;
+      text-align:center;
+      background:
+        radial-gradient(circle at top right,rgba(97,214,232,.18),transparent 45%),
+        rgba(255,255,255,.045);
+      border:1px solid rgba(97,214,232,.24);
+    }
+
+    .digital-card-box .mini{
+      color:var(--cyan);
+      font-size:11px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.8px;
+      margin-bottom:7px;
+    }
+
+    .digital-card-box h3{
+      margin:0 0 7px;
+      font-size:19px;
+      color:#fff;
+    }
+
+    .digital-card-box p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.45;
+    }
+
+    .digital-card-link{
+      min-height:50px;
+      border-radius:16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px;
+      color:#061317;
+      background:linear-gradient(135deg,#7deafd,var(--cyan),var(--cyan2));
+      font-weight:900;
+      font-size:14px;
+      box-shadow:0 10px 25px rgba(52,188,209,.20);
+    }
+
+    .footer{
+      margin-top:18px;
+      padding-top:8px;
+      text-align:center;
+      color:rgba(234,255,255,.58);
+      font-size:12px;
+      line-height:1.6;
+    }
+
+    .footer a{
+      color:var(--cyan);
+      font-weight:800;
+    }
+
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:22px;
+      transform:translateX(-50%) translateY(100px);
+      width:calc(100% - 32px);
+      max-width:430px;
+      padding:13px 16px;
+      border-radius:16px;
+      text-align:center;
+      color:#061317;
+      background:var(--cyan);
+      font-weight:900;
+      font-size:13px;
+      opacity:0;
+      transition:.3s ease;
+      z-index:100;
+      box-shadow:0 15px 40px rgba(0,0,0,.35);
+    }
+
+    .toast.show{
+      opacity:1;
+      transform:translateX(-50%) translateY(0);
+    }
+
+    @media(min-width:640px){
+      .hero-actions,
+      .grid,
+      .choices{
+        grid-template-columns:1fr 1fr;
+      }
+
+      h1{
+        font-size:50px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <main class="page">
 
     <section class="hero">
+
       <div class="company-logo">
         <img src="logo.webp" alt="Nueva Casa Real Estate">
       </div>
@@ -85,144 +578,596 @@
       </div>
 
       <span class="role">Real Estate Consultant • Nueva Casa</span>
+
       <h1>Μαργέλης<br>Σπύρος</h1>
-      <p class="subtitle">Προσωπικό ψηφιακό προφίλ για άμεση επικοινωνία σχετικά με αγορά, πώληση ή ενοικίαση ακινήτου.</p>
+
+      <p class="subtitle">
+        Προσωπικό ψηφιακό προφίλ για άμεση επικοινωνία σχετικά με αγορά, πώληση ή ενοικίαση ακινήτου.
+      </p>
 
       <div class="hero-actions">
-        <a class="btn btn-primary" href="tel:+306975631447">Καλέστε τον Σπύρο</a>
-        <a class="btn btn-dark" href="viber://chat?number=%2B306975631447">Στείλτε Viber</a>
+        <a class="btn btn-primary" href="tel:+306975631447">
+          Καλέστε τον Σπύρο
+        </a>
+
+        <a class="btn btn-dark" href="viber://chat?number=%2B306975631447">
+          Στείλτε Viber
+        </a>
       </div>
+
     </section>
+
 
     <section class="section" id="interest">
+
       <h2>Τι σας ενδιαφέρει;</h2>
-      <p>Πατήστε την ανάγκη σας, συμπληρώστε τα στοιχεία και στείλτε έτοιμο μήνυμα στο Viber του Σπύρου.</p>
+
+      <p>
+        Επιλέξτε τι ψάχνετε, συμπληρώστε τα βασικά στοιχεία και η πλατφόρμα θα ετοιμάσει το μήνυμά σας προς τον Σπύρο.
+      </p>
 
       <div class="choices">
-        <button class="btn btn-choice active" type="button" data-value="Ψάχνω ακίνητο για αγορά">Ψάχνω ακίνητο για αγορά</button>
-        <button class="btn btn-choice" type="button" data-value="Ψάχνω ακίνητο για ενοικίαση">Ψάχνω ακίνητο για ενοικίαση</button>
-        <button class="btn btn-choice" type="button" data-value="Έχω ακίνητο για πώληση">Έχω ακίνητο για πώληση</button>
-        <button class="btn btn-choice" type="button" data-value="Έχω ακίνητο για ενοικίαση">Έχω ακίνητο για ενοικίαση</button>
+
+        <button
+          class="btn btn-choice active"
+          type="button"
+          data-value="Ψάχνω ακίνητο για αγορά">
+          Ψάχνω ακίνητο για αγορά
+        </button>
+
+        <button
+          class="btn btn-choice"
+          type="button"
+          data-value="Ψάχνω ακίνητο για ενοικίαση">
+          Ψάχνω ακίνητο για ενοικίαση
+        </button>
+
+        <button
+          class="btn btn-choice"
+          type="button"
+          data-value="Έχω ακίνητο για πώληση">
+          Έχω ακίνητο για πώληση
+        </button>
+
+        <button
+          class="btn btn-choice"
+          type="button"
+          data-value="Έχω ακίνητο για ενοικίαση">
+          Έχω ακίνητο για ενοικίαση
+        </button>
+
       </div>
+
 
       <div class="form-box">
-        <form id="leadForm">
-          <div class="field"><label for="interestText">Ενδιαφέρον</label><input id="interestText" type="text" value="Ψάχνω ακίνητο για αγορά" readonly></div>
-          <div class="field"><label for="name">Ονοματεπώνυμο</label><input id="name" type="text" placeholder="Γράψτε το όνομά σας" required></div>
-          <div class="field"><label for="phone">Τηλέφωνο</label><input id="phone" type="tel" placeholder="Γράψτε το τηλέφωνό σας" required></div>
-          <div class="field"><label for="area">Περιοχή</label><input id="area" type="text" placeholder="Περιοχή ενδιαφέροντος ή ακινήτου"></div>
-          <div class="field"><label for="budget">Budget / Τιμή</label><input id="budget" type="text" placeholder="π.χ. έως 120.000€ ή 650€/μήνα"></div>
-          <div class="field"><label for="comment">Σύντομο σχόλιο</label><textarea id="comment" placeholder="Γράψτε κάτι σύντομο αν θέλετε"></textarea></div>
 
-          <div class="preview-box">
-            <strong>Έτοιμο μήνυμα προς τον Σπύρο</strong>
-            <div class="preview-text" id="messagePreview"></div>
+        <form id="leadForm">
+
+          <div class="field">
+            <label for="interestText">Ενδιαφέρον</label>
+            <input
+              id="interestText"
+              type="text"
+              value="Ψάχνω ακίνητο για αγορά"
+              readonly>
           </div>
 
-          <button class="btn btn-primary" type="submit">Αποστολή στο Viber του Σπύρου</button>
-          <div class="small-note">Θα ανοίξει το Viber με το έτοιμο μήνυμα. Ο πελάτης πατάει απλά αποστολή.</div>
+          <div class="field">
+            <label for="name">Ονοματεπώνυμο</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Γράψτε το όνομά σας"
+              required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Τηλέφωνο</label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="Γράψτε το τηλέφωνό σας"
+              required>
+          </div>
+
+          <div class="field">
+            <label for="area">Περιοχή</label>
+            <input
+              id="area"
+              type="text"
+              placeholder="Περιοχή ενδιαφέροντος ή ακινήτου">
+          </div>
+
+          <div class="field">
+            <label for="budget">Budget / Τιμή</label>
+            <input
+              id="budget"
+              type="text"
+              placeholder="π.χ. έως 120.000€ ή 650€/μήνα">
+          </div>
+
+          <div class="field">
+            <label for="comment">Σύντομο σχόλιο</label>
+            <textarea
+              id="comment"
+              placeholder="Γράψτε κάτι σύντομο αν θέλετε"></textarea>
+          </div>
+
+
+          <div class="preview-box">
+
+            <span class="preview-title">
+              Έτοιμο μήνυμα προς τον Σπύρο
+            </span>
+
+            <div
+              class="preview-text"
+              id="messagePreview">
+            </div>
+
+            <button
+              class="copy-btn"
+              id="copyButton"
+              type="button"
+              onclick="copyMessage()">
+              Αντιγραφή μηνύματος
+            </button>
+
+          </div>
+
+
+          <button
+            class="btn btn-primary"
+            type="submit">
+            Άνοιγμα συνομιλίας με τον Σπύρο στο Viber
+          </button>
+
+          <div class="small-note">
+            Η πλατφόρμα θα προσπαθήσει να αντιγράψει αυτόματα το μήνυμα και θα ανοίξει απευθείας τη συνομιλία με τον Σπύρο.
+            Αν το κινητό σας δεν επιτρέψει αυτόματη αντιγραφή, χρησιμοποιήστε το κουμπί «Αντιγραφή μηνύματος».
+          </div>
+
         </form>
+
       </div>
+
     </section>
 
+
     <section class="section">
+
       <h2>Nueva Casa Real Estate</h2>
+
       <div class="grid">
-        <a class="btn btn-dark" href="https://nuevacasa.estate/search">Αναζήτηση ακινήτων</a>
-        <a class="btn btn-dark" href="https://nuevacasa.estate/listings?listingType=for+sale">Ακίνητα προς πώληση</a>
-        <a class="btn btn-dark" href="https://nuevacasa.estate/listings?listingType=for+rent">Ακίνητα προς ενοικίαση</a>
-        <a class="btn btn-dark" href="https://nuevacasa.estate/submit">Ανάθεση ακινήτου</a>
-        <a class="btn btn-dark" href="https://nuevacasa.estate/request">Ζήτηση ακινήτου</a>
-        <a class="btn btn-primary" href="https://nuevacasa.estate/">Visit the website</a>
+
+        <a class="btn btn-dark" href="https://nuevacasa.estate/search">
+          Αναζήτηση ακινήτων
+        </a>
+
+        <a class="btn btn-dark" href="https://nuevacasa.estate/listings?listingType=for+sale">
+          Ακίνητα προς πώληση
+        </a>
+
+        <a class="btn btn-dark" href="https://nuevacasa.estate/listings?listingType=for+rent">
+          Ακίνητα προς ενοικίαση
+        </a>
+
+        <a class="btn btn-dark" href="https://nuevacasa.estate/submit">
+          Ανάθεση ακινήτου
+        </a>
+
+        <a class="btn btn-dark" href="https://nuevacasa.estate/request">
+          Ζήτηση ακινήτου
+        </a>
+
+        <a class="btn btn-primary" href="https://nuevacasa.estate/">
+          Επισκεφθείτε την ιστοσελίδα
+        </a>
+
       </div>
-      <div class="info-box"><strong>Γραφείο</strong>Nueva Casa Real Estate • Μιαούλη Ανδρέα 31, Πάτρα, 26222</div>
+
+      <div class="info-box">
+        <strong>Γραφείο</strong>
+        Nueva Casa Real Estate • Μιαούλη Ανδρέα 31, Πάτρα, 26222
+      </div>
+
     </section>
 
+
     <section class="section">
+
       <h2>Πώς σας φάνηκε ο Σπύρος Μαργέλης;</h2>
-      <p>Αν μείνατε ευχαριστημένοι από αυτόν τον μεσίτη, αφήστε το σχόλιό σας ή δείξτε το ενδιαφέρον σας.</p>
+
+      <p>
+        Αν μείνατε ευχαριστημένοι από αυτόν τον μεσίτη, αφήστε το σχόλιό σας ή δείξτε το ενδιαφέρον σας.
+      </p>
 
       <div class="faces">
+
         <a class="face-card" href="feedback.html?type=bad">
-          <span class="face-icon face-sad"><span class="mouth"></span></span>
+          <span class="face-icon face-sad">
+            <span class="mouth"></span>
+          </span>
           <span class="face-label">Όχι καλή</span>
         </a>
 
         <a class="face-card" href="feedback.html?type=neutral">
-          <span class="face-icon face-neutral"><span class="mouth"></span></span>
+          <span class="face-icon face-neutral">
+            <span class="mouth"></span>
+          </span>
           <span class="face-label">Μέτρια</span>
         </a>
 
-        <a class="face-card" href="https://search.google.com/local/writereview?placeid=ChIJZ8YNf9BJXhMReOlg_bBxj54">
-          <span class="face-icon face-happy"><span class="mouth"></span></span>
+        <a
+          class="face-card"
+          href="https://search.google.com/local/writereview?placeid=ChIJZ8YNf9BJXhMReOlg_bBxj54">
+
+          <span class="face-icon face-happy">
+            <span class="mouth"></span>
+          </span>
+
           <span class="face-label">Πολύ καλή</span>
         </a>
+
       </div>
+
     </section>
 
+
+    <section class="digital-card-box">
+
+      <div class="mini">
+        NFC Digital Profile
+      </div>
+
+      <h3>
+        Θέλετε και εσείς τη δική σας Ψηφιακή Κάρτα;
+      </h3>
+
+      <p>
+        Δημιουργήστε ένα προσωπικό ψηφιακό προφίλ με τα στοιχεία, τις υπηρεσίες και τους συνδέσμους σας σε μία σελίδα.
+      </p>
+
+      <a
+        class="digital-card-link"
+        href="https://carbridgefr-glitch.github.io/test-profil-page/create-card.html">
+        Φτιάξε τη δική σου Ψηφιακή Κάρτα
+      </a>
+
+    </section>
+
+
     <footer class="footer">
-      Powered by NFC Μπρελόκ • Jewel Art<br>
-      Instagram: <a href="https://www.instagram.com/lazaros_jewelart/">lazaros_jewelart</a>
+
+      Powered by NFC Μπρελόκ • Jewel Art
+      <br>
+
+      Instagram:
+      <a href="https://www.instagram.com/lazaros_jewelart/">
+        lazaros_jewelart
+      </a>
+
     </footer>
 
   </main>
 
+
+  <div class="toast" id="toast">
+    Το μήνυμα αντιγράφηκε
+  </div>
+
+
   <script>
+
     const agentPhone = "306975631447";
+
     const choices = document.querySelectorAll(".btn-choice");
-    const interestInput = document.getElementById("interestText");
-    const fields = ["name", "phone", "area", "budget", "comment"];
+
+    const interestInput =
+      document.getElementById("interestText");
+
+    const inputIds = [
+      "name",
+      "phone",
+      "area",
+      "budget",
+      "comment"
+    ];
+
+
+    function getValue(id){
+
+      return document
+        .getElementById(id)
+        .value
+        .trim();
+
+    }
+
 
     function buildMessage(){
-      const interest = document.getElementById("interestText").value.trim();
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const area = document.getElementById("area").value.trim();
-      const budget = document.getElementById("budget").value.trim();
-      const comment = document.getElementById("comment").value.trim();
 
-      return "Καλησπέρα σας κύριε Σπύρο, επικοινωνώ από το προσωπικό σας ψηφιακό προφίλ Nueva Casa.\n\n" +
-        "Ενδιαφέρον: " + interest + "\n" +
-        "Ονοματεπώνυμο: " + name + "\n" +
-        "Τηλέφωνο: " + phone + "\n" +
-        "Περιοχή: " + area + "\n" +
-        "Budget / Τιμή: " + budget + "\n" +
-        "Σχόλιο: " + comment;
+      const interest = getValue("interestText");
+      const name = getValue("name");
+      const phone = getValue("phone");
+      const area = getValue("area");
+      const budget = getValue("budget");
+      const comment = getValue("comment");
+
+
+      let message = "";
+
+      message += "Καλησπέρα σας κύριε Σπύρο.\n";
+      message += "Επικοινωνώ μαζί σας μέσω του ψηφιακού σας προφίλ Nueva Casa.\n\n";
+
+      message += "ΕΝΔΙΑΦΕΡΟΝ\n";
+      message += interest + "\n\n";
+
+      message += "ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ\n";
+
+      if(name){
+        message += "Ονοματεπώνυμο: " + name + "\n";
+      }
+
+      if(phone){
+        message += "Τηλέφωνο: " + phone + "\n";
+      }
+
+      if(area){
+        message += "Περιοχή: " + area + "\n";
+      }
+
+      if(budget){
+        message += "Budget / Τιμή: " + budget + "\n";
+      }
+
+      if(comment){
+        message += "\nΣχόλιο:\n" + comment;
+      }
+
+      message += "\n\nΘα ήθελα να επικοινωνήσετε μαζί μου.";
+
+      return message;
+
     }
+
 
     function updatePreview(){
-      document.getElementById("messagePreview").textContent = buildMessage();
+
+      document.getElementById("messagePreview").textContent =
+        buildMessage();
+
     }
 
+
     choices.forEach(function(button){
+
       button.addEventListener("click",function(){
-        choices.forEach(function(item){item.classList.remove("active")});
+
+        choices.forEach(function(item){
+          item.classList.remove("active");
+        });
+
         button.classList.add("active");
-        interestInput.value = button.getAttribute("data-value");
+
+        interestInput.value =
+          button.getAttribute("data-value");
+
         updatePreview();
-        document.querySelector(".form-box").scrollIntoView({behavior:"smooth",block:"center"});
+
+        document
+          .querySelector(".form-box")
+          .scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+          });
+
       });
+
     });
 
-    fields.forEach(function(id){
-      document.getElementById(id).addEventListener("input", updatePreview);
+
+    inputIds.forEach(function(id){
+
+      document
+        .getElementById(id)
+        .addEventListener("input",updatePreview);
+
     });
 
-    document.getElementById("leadForm").addEventListener("submit",function(event){
-      event.preventDefault();
+
+    function showToast(text){
+
+      const toast =
+        document.getElementById("toast");
+
+      toast.textContent = text;
+
+      toast.classList.add("show");
+
+      setTimeout(function(){
+
+        toast.classList.remove("show");
+
+      },2200);
+
+    }
+
+
+    async function copyMessage(){
 
       const text = buildMessage();
 
-      if(navigator.clipboard){
-        navigator.clipboard.writeText(text).finally(function(){
-          window.location.href = "viber://forward?text=" + encodeURIComponent(text);
-        });
-      } else {
-        window.location.href = "viber://forward?text=" + encodeURIComponent(text);
+      try{
+
+        await navigator.clipboard.writeText(text);
+
+        const button =
+          document.getElementById("copyButton");
+
+        button.textContent =
+          "Το μήνυμα αντιγράφηκε ✓";
+
+        button.classList.add("copied");
+
+        showToast(
+          "Το μήνυμα αντιγράφηκε. Ανοίξτε το Viber και κάντε επικόλληση."
+        );
+
+        setTimeout(function(){
+
+          button.textContent =
+            "Αντιγραφή μηνύματος";
+
+          button.classList.remove("copied");
+
+        },3000);
+
       }
-    });
+
+      catch(error){
+
+        fallbackCopy(text);
+
+      }
+
+    }
+
+
+    function fallbackCopy(text){
+
+      const temp =
+        document.createElement("textarea");
+
+      temp.value = text;
+
+      temp.style.position = "fixed";
+      temp.style.left = "-9999px";
+      temp.style.top = "-9999px";
+
+      document.body.appendChild(temp);
+
+      temp.focus();
+      temp.select();
+
+      try{
+
+        document.execCommand("copy");
+
+        showToast(
+          "Το μήνυμα αντιγράφηκε."
+        );
+
+      }
+
+      catch(error){
+
+        showToast(
+          "Πατήστε παρατεταμένα πάνω στο έτοιμο μήνυμα για αντιγραφή."
+        );
+
+      }
+
+      document.body.removeChild(temp);
+
+    }
+
+
+    document
+      .getElementById("leadForm")
+      .addEventListener("submit",async function(event){
+
+        event.preventDefault();
+
+        const name = getValue("name");
+        const phone = getValue("phone");
+
+        if(!name || !phone){
+
+          showToast(
+            "Συμπληρώστε ονοματεπώνυμο και τηλέφωνο."
+          );
+
+          return;
+
+        }
+
+        const text = buildMessage();
+
+        let copied = false;
+
+
+        try{
+
+          await navigator.clipboard.writeText(text);
+
+          copied = true;
+
+        }
+
+        catch(error){
+
+          try{
+
+            const temp =
+              document.createElement("textarea");
+
+            temp.value = text;
+
+            temp.style.position = "fixed";
+            temp.style.left = "-9999px";
+
+            document.body.appendChild(temp);
+
+            temp.focus();
+            temp.select();
+
+            copied =
+              document.execCommand("copy");
+
+            document.body.removeChild(temp);
+
+          }
+
+          catch(error2){
+
+            copied = false;
+
+          }
+
+        }
+
+
+        if(copied){
+
+          showToast(
+            "Το μήνυμα αντιγράφηκε. Ανοίγει η συνομιλία με τον Σπύρο."
+          );
+
+        }
+
+        else{
+
+          showToast(
+            "Ανοίγει η συνομιλία. Αν χρειαστεί, επιστρέψτε και πατήστε Αντιγραφή μηνύματος."
+          );
+
+        }
+
+
+        setTimeout(function(){
+
+          window.location.href =
+            "viber://chat?number=%2B" + agentPhone;
+
+        },650);
+
+      });
+
 
     updatePreview();
+
   </script>
+
 </body>
 </html>
