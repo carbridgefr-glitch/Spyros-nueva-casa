@@ -1,14 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Μαργέλης Σπύρος | Nueva Casa Real Estate</title>
   <meta name="description" content="Προσωπικό ψηφιακό προφίλ μεσίτη - Μαργέλης Σπύρος, Nueva Casa Real Estate.">
   <meta name="theme-color" content="#071317">
-
   <meta property="og:title" content="Μαργέλης Σπύρος | Nueva Casa Real Estate">
   <meta property="og:description" content="Επικοινωνήστε άμεσα για αγορά, πώληση ή ενοικίαση ακινήτου.">
   <meta property="og:image" content="spyros%20fun.jpg">
@@ -52,6 +49,9 @@
     .field input,.field textarea{width:100%;border:1px solid rgba(97,214,232,.24);border-radius:14px;padding:12px 13px;font-family:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.08);outline:none}
     .field textarea{min-height:92px;resize:vertical}
     .field input::placeholder,.field textarea::placeholder{color:rgba(234,255,255,.42)}
+    .preview-box{margin-top:14px;border-radius:18px;padding:14px;background:rgba(97,214,232,.09);border:1px solid rgba(97,214,232,.22)}
+    .preview-box strong{display:block;color:var(--cyan);font-size:13px;margin-bottom:8px}
+    .preview-text{white-space:pre-wrap;color:rgba(234,255,255,.9);font-size:13.5px;line-height:1.45}
     .small-note{margin:9px 0 0;color:rgba(234,255,255,.58);font-size:12px;text-align:center;line-height:1.45}
     .faces{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
     .face-card{min-height:112px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
@@ -96,7 +96,7 @@
 
     <section class="section" id="interest">
       <h2>Τι σας ενδιαφέρει;</h2>
-      <p>Επιλέξτε ανάγκη, συμπληρώστε τα βασικά και στείλτε έτοιμο μήνυμα στο Viber.</p>
+      <p>Πατήστε την ανάγκη σας, συμπληρώστε τα στοιχεία και στείλτε έτοιμο μήνυμα στο Viber του Σπύρου.</p>
 
       <div class="choices">
         <button class="btn btn-choice active" type="button" data-value="Ψάχνω ακίνητο για αγορά">Ψάχνω ακίνητο για αγορά</button>
@@ -107,15 +107,20 @@
 
       <div class="form-box">
         <form id="leadForm">
-          <div class="field"><label for="interest">Ενδιαφέρον</label><input id="interest" type="text" value="Ψάχνω ακίνητο για αγορά" readonly></div>
+          <div class="field"><label for="interestText">Ενδιαφέρον</label><input id="interestText" type="text" value="Ψάχνω ακίνητο για αγορά" readonly></div>
           <div class="field"><label for="name">Ονοματεπώνυμο</label><input id="name" type="text" placeholder="Γράψτε το όνομά σας" required></div>
           <div class="field"><label for="phone">Τηλέφωνο</label><input id="phone" type="tel" placeholder="Γράψτε το τηλέφωνό σας" required></div>
           <div class="field"><label for="area">Περιοχή</label><input id="area" type="text" placeholder="Περιοχή ενδιαφέροντος ή ακινήτου"></div>
           <div class="field"><label for="budget">Budget / Τιμή</label><input id="budget" type="text" placeholder="π.χ. έως 120.000€ ή 650€/μήνα"></div>
           <div class="field"><label for="comment">Σύντομο σχόλιο</label><textarea id="comment" placeholder="Γράψτε κάτι σύντομο αν θέλετε"></textarea></div>
 
-          <button class="btn btn-primary" type="submit">Στείλτε το ενδιαφέρον στο Viber</button>
-          <div class="small-note">Το μήνυμα θα αντιγραφεί και θα ανοίξει το Viber προς τον Σπύρο.</div>
+          <div class="preview-box">
+            <strong>Έτοιμο μήνυμα προς τον Σπύρο</strong>
+            <div class="preview-text" id="messagePreview"></div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Αποστολή στο Viber του Σπύρου</button>
+          <div class="small-note">Θα ανοίξει το Viber με το έτοιμο μήνυμα. Ο πελάτης πατάει απλά αποστολή.</div>
         </form>
       </div>
     </section>
@@ -165,44 +170,59 @@
   <script>
     const agentPhone = "306975631447";
     const choices = document.querySelectorAll(".btn-choice");
-    const interestInput = document.getElementById("interest");
+    const interestInput = document.getElementById("interestText");
+    const fields = ["name", "phone", "area", "budget", "comment"];
 
-    choices.forEach(function(button){
-      button.addEventListener("click",function(){
-        choices.forEach(function(item){item.classList.remove("active")});
-        button.classList.add("active");
-        interestInput.value = button.getAttribute("data-value");
-        document.querySelector(".form-box").scrollIntoView({behavior:"smooth",block:"center"});
-      });
-    });
-
-    document.getElementById("leadForm").addEventListener("submit",function(event){
-      event.preventDefault();
-
-      const interest = document.getElementById("interest").value.trim();
+    function buildMessage(){
+      const interest = document.getElementById("interestText").value.trim();
       const name = document.getElementById("name").value.trim();
       const phone = document.getElementById("phone").value.trim();
       const area = document.getElementById("area").value.trim();
       const budget = document.getElementById("budget").value.trim();
       const comment = document.getElementById("comment").value.trim();
 
-      const plainMessage =
-        "Καλησπέρα σας κύριε Σπύρο, επικοινωνώ από το προσωπικό σας ψηφιακό προφίλ Nueva Casa.\n\n" +
+      return "Καλησπέρα σας κύριε Σπύρο, επικοινωνώ από το προσωπικό σας ψηφιακό προφίλ Nueva Casa.\n\n" +
         "Ενδιαφέρον: " + interest + "\n" +
         "Ονοματεπώνυμο: " + name + "\n" +
         "Τηλέφωνο: " + phone + "\n" +
         "Περιοχή: " + area + "\n" +
         "Budget / Τιμή: " + budget + "\n" +
         "Σχόλιο: " + comment;
+    }
+
+    function updatePreview(){
+      document.getElementById("messagePreview").textContent = buildMessage();
+    }
+
+    choices.forEach(function(button){
+      button.addEventListener("click",function(){
+        choices.forEach(function(item){item.classList.remove("active")});
+        button.classList.add("active");
+        interestInput.value = button.getAttribute("data-value");
+        updatePreview();
+        document.querySelector(".form-box").scrollIntoView({behavior:"smooth",block:"center"});
+      });
+    });
+
+    fields.forEach(function(id){
+      document.getElementById(id).addEventListener("input", updatePreview);
+    });
+
+    document.getElementById("leadForm").addEventListener("submit",function(event){
+      event.preventDefault();
+
+      const text = buildMessage();
 
       if(navigator.clipboard){
-        navigator.clipboard.writeText(plainMessage).finally(function(){
-          window.location.href = "viber://chat?number=%2B" + agentPhone;
+        navigator.clipboard.writeText(text).finally(function(){
+          window.location.href = "viber://forward?text=" + encodeURIComponent(text);
         });
       } else {
-        window.location.href = "viber://chat?number=%2B" + agentPhone;
+        window.location.href = "viber://forward?text=" + encodeURIComponent(text);
       }
     });
+
+    updatePreview();
   </script>
 </body>
 </html>
